@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Install code dependencies
-        run: {{ install deps }} #todo replace
+        run: npm install 
       - name: Setup Wake arena
         uses: Ackee-Blockchain/wake-arena-setup-action@0.1.1
       - name: Perform audit
